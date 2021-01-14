@@ -1,0 +1,22 @@
+<h3>Here's your task</h3>
+<div class="row">
+    <form action="/tasks/{{task._id}}" method="GET" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" name="title" id="title" value="{{task.title}}">
+                <label for="title">Title</label>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="input-field">
+                <h5>Individual tasks</h5><p>(each task is in subsequent lines)</p>
+                <textarea id="body" name="body">{{task.body}}</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <a href="/dashboard" class="btn orange">Back to dashboard</a>
+        </div>
+    </form>
+</div>

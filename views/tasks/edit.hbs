@@ -1,0 +1,24 @@
+<h3>Edit Task</h3>
+<div class="row">
+    <form action="/tasks/{{task._id}}" method="POST" class="col s12">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" name="title" id="title" value="{{task.title}}">
+                <label for="title">Title</label>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="input-field">
+                <h5>Add individual tasks</h5><p>(put each task in subsequent lines)</p>
+                <textarea id="body" name="body">{{task.body}}</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>
