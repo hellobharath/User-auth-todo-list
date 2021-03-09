@@ -1,8 +1,32 @@
+<head>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(149, 248, 243);
+            font-weight: bold;
+        }
+        th{
+            text-align: center;
+            color: rgb(149, 248, 243);
+            font-weight: bold;
+
+        }
+         td{
+            text-align: center;
+            color: rgb(153, 206, 9);
+            font-size: larger;
+            
+
+        }
+    </style>
+</head>
+
+
 <h5>Dashboard</h5>
-<h1>Welcome {{name}}</h1>
+<h2>Welcome {{name}}</h1>
 <!-- Loop through tasks and output them in a table -->
 {{#if tasks}}
-    <p>Here are your main tasks:</p>
+    <p><h5>Here are your main tasks:</h5></p>
     <table class="striped">
         <thead>
             <tr>
