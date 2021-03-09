@@ -12,3 +12,8 @@ p {
     float: left;
     margin-right: 5px;
 }
+
+body {
+    background-color: rgb(17, 3, 36);
+    color: white;
+  }
