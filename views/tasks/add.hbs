@@ -1,16 +1,33 @@
-<h3>Manage Task</h3>
+<head>
+    <style>
+.taskTitle {
+  color: rgb(131, 243, 228);
+  text-align: center;
+ 
+} 
+.taskName {
+  color: rgb(219, 252, 143);
+  text-align: center;
+  font-weight: bold;
+     
+ 
+} 
+</style>
+</head>
+
+<h3 class="taskTitle">Manage Task</h3>
 <div class="row">
     <form action="/tasks" method="POST" class="col s12">
         <div class="row">
             <div class="input-field">
-                <input type="text" name="title" id="title">
+                <input type="text" name="title" id="title" class="taskName">
                 <label for="title">Title</label>
             </div>
         </div>
         
         <div class="row">
             <div class="input-field">
-                <h5>Add individual tasks</h5>
+                <h5 class="taskTitle">Add individual tasks</h5>
                 <p>(put each task in subsequent lines)</p>
                 <textarea id="body" name="body"></textarea>
             </div>
